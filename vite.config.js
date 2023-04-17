@@ -5,7 +5,8 @@ import path from 'path';
 export default defineConfig({
 	root: path.resolve("./src/client"),
 	build: {
-		outDir: path.resolve(__dirname, "./build/client")
+		outDir: path.resolve(__dirname, "./build/client"),
+		emptyOutDir: true,
 	},
 	plugins: [react()],
 });
