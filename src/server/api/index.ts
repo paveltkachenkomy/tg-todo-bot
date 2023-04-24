@@ -10,6 +10,7 @@ api.use(express.urlencoded({extended: false}));
 
 api.use(express.static(path.resolve(__dirname, "../../client")));
 
+// Маршрутизация
 
 // Запуск сервера
 const port = process.env.PORT || 5000;
