@@ -2,6 +2,7 @@ import TelegramBot from "node-telegram-bot-api"
 import { Account } from "../../db/models";
 
 export const StartCMD = async (msg: TelegramBot.Message) => {
+	console.log(msg);
 	try {
 		const accoucn = await Account.findById(msg.chat.id);
 		if (!accoucn) {
